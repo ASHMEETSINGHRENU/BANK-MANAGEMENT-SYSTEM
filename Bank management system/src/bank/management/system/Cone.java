@@ -9,13 +9,13 @@ public class Cone {
 
     public Cone() {
         try {
-            // Load the MySQL JDBC driver
+            
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            // Connect to the database
+            
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank_management", "root", "");
 
-            // Create a statement object
+       
             statement = connection.createStatement();
         } catch (Exception e) {
             e.printStackTrace();
@@ -24,7 +24,7 @@ public class Cone {
 }
 
 
-//mySql query :-
+//mySql query :- php XAMPP Control Panel
 //create table signuptwo(form_no varchar(30),
 //              religion var(30),
 //              categroy var(30),
